@@ -1,0 +1,113 @@
+/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    --clr-font-family: 'Kumbh Sans', sans-serif;
+    --clr-Orange: hsl(26, 100%, 55%);
+    --clr-Pale-orange: hsl(25, 100%, 94%);
+    --clr-Very-vark-blue: hsl(220, 13%, 13%);
+    --clr-Dark-grayish-blue: hsl(219, 9%, 45%);
+    --clr-Grayish-blue: hsl(220, 14%, 75%);
+    --clr-Light-grayish-blue: hsl(223, 64%, 98%);
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-Black: hsl(0, 0%, 0%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--clr-font-family);
+}
+
+
+/* header */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 2.4rem 2.4rem 2rem;
+}
+.open{
+    cursor: pointer;
+}
+.logo{
+    display: flex;
+    align-items: baseline;
+    gap: 1.6rem;
+}
+.cart-avatar{
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+}
+.cart-btn{
+    cursor: pointer;
+    position: relative;
+}
+.cart-btn img{
+    width: 2.1rem;
+}
+.cart-count{
+    position: absolute;
+    top: -25%;
+    right: -25%;
+    background-color: var(--clr-Orange);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.1rem 0.6rem;
+    border-radius: 1rem;
+    line-height: 100%;
+}
+.avatar{
+    width: 2.5rem;
+    cursor: pointer;
+}
+.avatar:hover{
+    border: 2px solid  var(--clr-Orange);
+    border-radius: 50%;
+}
+.menu{
+    background-color: rgba(0, 0, 0, 0.750);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+.slide-menu{
+    background-color: white;
+    height: 100vh;
+    width: 66%;
+    padding: 2.3rem;
+    opacity: 1;
+}
+.slide-menu img{
+    transition: transform .5s ease;
+}
+.slide-menu img:hover{
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+.slide-menu ul{
+    margin-top: 5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+    list-style: none;
+}
+a, :hover, :active{
+    color: var(--clr-Very-vark-blue);
+    text-decoration: unset;
+}
+a:hover{
+    text-decoration: underline;
+    opacity: .75%;
+}
+.hidden{
+    display: none;
+}
+
